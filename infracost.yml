@@ -8,6 +8,6 @@ projects:
     path: test/fixtures/default_cloud_nat
     usage_file: test/fixtures/default_vpc/infracost-usage.yml
 
-  - name: "terraform-google-cloud-nat - Cloud NAT list of subnets"
-    path: test/fixtures/cloud_nat_list_of_subnets
-    usage_file: test/fixtures/cloud_nat_list_of_subnets/infracost-usage.yml
+  - name: "terraform-google-cloud-nat - List of subnets Cloud NAT"
+    path: test/fixtures/list_of_subnets_cloud_nat
+    usage_file: test/fixtures/list_of_subnets_cloud_nat/infracost-usage.yml
