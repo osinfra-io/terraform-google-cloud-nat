@@ -24,11 +24,12 @@ You can check the [test/fixtures](test/fixtures/) directory for example configur
 Here is an example of a basic configuration:
 
 ```hcl
-module "vpc" {
-  source   = "github.com/osinfra-io/terraform-google-cloud-nat//global?ref=v0.0.0"
+module "cloud_nat" {
+  source   = "github.com/osinfra-io/terraform-google-cloud-nat//regional?ref=v0.0.0"
 
-  name    = "example-vpc"
-  project = "example-project"
+  network    = "example-vpc"
+  project_id = "example-project"
+  region     = "us-east1"
 }
 ```
 
