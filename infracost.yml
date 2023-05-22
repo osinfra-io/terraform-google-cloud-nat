@@ -4,10 +4,10 @@
 version: 0.1
 
 projects:
-  - name: "terraform-google-cloud-nat - Default Cloud NAT"
+  - name: "terraform-google-cloud-nat - Default"
     path: test/fixtures/default_cloud_nat
-    usage_file: test/fixtures/default_vpc/infracost-usage.yml
+    usage_file: test/fixtures/default_cloud_nat/infracost-usage.yml
 
-  - name: "terraform-google-cloud-nat - List of subnets Cloud NAT"
+  - name: "terraform-google-cloud-nat - List of subnets"
     path: test/fixtures/list_of_subnets_cloud_nat
     usage_file: test/fixtures/list_of_subnets_cloud_nat/infracost-usage.yml
