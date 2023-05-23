@@ -1,4 +1,4 @@
-# <img align="left" width="45" height="45" src="https://user-images.githubusercontent.com/1610100/234732421-ef3a5c43-817d-4e99-8e0c-d43f07358791.png"> Google Cloud Platform - Cloud NAT Terraform Module
+# <img align="left" width="45" height="45" src="https://github.com/osinfra-io/terraform-google-cloud-nat/assets/1610100/20f4f75e-bf62-46e5-8f35-0ba3a9482b39"> Google Cloud Platform - Cloud NAT Terraform Module
 
 **[GitHub Actions](https://github.com/osinfra-io/terraform-google-cloud-nat/actions):**
 
