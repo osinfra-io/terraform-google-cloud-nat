@@ -6,6 +6,8 @@
 
 **[Infracost](https://www.infracost.io):**
 
+[![infracost](https://img.shields.io/endpoint?label=Default&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d/branch/ef3d37cf-2b03-430b-a51d-e06be6e98921/terraform-google-cloud-nat%2520-%2520Default)](https://dashboard.infracost.io/org/osinfra-io/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d?tab=settings) [![infracost](https://img.shields.io/endpoint?label=List%20of%20Subnets&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d/branch/ef3d37cf-2b03-430b-a51d-e06be6e98921/terraform-google-cloud-nat%2520-%2520List%2520of%2520subnets)](https://dashboard.infracost.io/org/osinfra-io/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d?tab=settings)
+
 Monthly cost estimates for this module based off these usage values:
 
 - [default_nat](test/fixtures/default_cloud_nat/infracost-usage.yml)
@@ -13,9 +15,9 @@ Monthly cost estimates for this module based off these usage values:
 
 Terraform **example** module for a Google Cloud Platform VPC.
 
-*We do not recommend consuming this module like you might a [public module](https://registry.terraform.io/browse/modules). Its purpose is to be a baseline, something you can fork and potentially maintain on your own and modify to fit your organization's needs. Using public modules vs. writing your own have various [drivers and trade-offs](https://github.com/orgs/osinfra-io/discussions/3) that your organization should evaluate.*
+💡 *We do not recommend consuming this module like you might a [public module](https://registry.terraform.io/browse/modules). Its purpose is to be a baseline, something you can fork and potentially maintain on your own and modify to fit your organization's needs. Using public modules vs. writing your own have various [drivers and trade-offs](https://github.com/orgs/osinfra-io/discussions/3) that your organization should evaluate.*
 
-## Usage
+## 🔩 Usage
 
 You can check the [test/fixtures](test/fixtures/) directory for example configurations. These fixtures set up the system for the testing process by providing it with all the necessary code to initialize it, thus creating good examples to base your configurations on.
 
@@ -26,7 +28,7 @@ module "cloud_nat" {
   source   = "github.com/osinfra-io/terraform-google-cloud-nat//regional?ref=v0.0.0"
 
   network    = "example-vpc"
-  project_id = "example-project"
+  project    = "example-project"
   region     = "us-east1"
 }
 ```
@@ -39,7 +41,7 @@ To avoid slowing down [stream-aligned](https://teamtopologies.com/key-concepts) 
 
 See the documentation for setting up a local development environment [here](https://docs.osinfra.io/development-setup).
 
-### Tools
+### 🛠️️ Tools
 
 - [infracost](https://github.com/infracost/infracost)
 - [inspec](https://github.com/inspec/inspec)
@@ -48,13 +50,13 @@ See the documentation for setting up a local development environment [here](http
 - [pre-commit-terraform](https://github.com/antonbabenko/pre-commit-terraform)
 - [terraform-docs](https://github.com/terraform-docs/terraform-docs)
 
-### Skills and Knowledge
+### 📋 Skills and Knowledge
 
 Links to documentation and other resources required to develop and iterate in this repository successfully.
 
 - [cloud nat](https://cloud.google.com/nat/docs/overview)
 
-### Tests
+### 🔍 Tests
 
 ```none
 bundle exec kitchen converge
@@ -62,6 +64,6 @@ bundle exec kitchen verify
 bundle exec kitchen destroy
 ```
 
-## Terraform Documentation
+## 📓 Terraform Documentation
 
 - [regional](regional/README.md)

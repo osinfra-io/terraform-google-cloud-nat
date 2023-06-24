@@ -5,6 +5,6 @@ output "name" {
   value = module.test.name
 }
 
-output "project_id" {
-  value = module.test.project_id
+output "project" {
+  value = module.test.project
 }

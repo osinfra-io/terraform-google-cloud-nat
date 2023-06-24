@@ -6,7 +6,7 @@ output "name" {
   value       = local.name
 }
 
-output "project_id" {
+output "project" {
   description = "The project ID"
-  value       = var.project_id
+  value       = var.project
 }

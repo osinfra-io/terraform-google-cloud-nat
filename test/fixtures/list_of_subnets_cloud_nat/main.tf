@@ -6,7 +6,7 @@ module "test" {
 
   network                            = "kitchen-vpc"
   prefix                             = "kitchen-vpc-subnetworks"
-  project_id                         = var.project_id
+  project                            = var.project
   region                             = "us-east4"
   source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
   subnetwork_names                   = ["kitchen-subnet-us-east4"]

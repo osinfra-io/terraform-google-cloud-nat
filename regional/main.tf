@@ -4,7 +4,7 @@
 resource "google_compute_router" "cloud_nat" {
   name    = local.name
   network = var.network
-  project = var.project_id
+  project = var.project
   region  = var.region
 }
 
@@ -20,7 +20,7 @@ resource "google_compute_router_nat" "this" {
 
   name                               = local.name
   nat_ip_allocate_option             = "AUTO_ONLY"
-  project                            = var.project_id
+  project                            = var.project
   region                             = var.region
   router                             = google_compute_router.cloud_nat.name
   source_subnetwork_ip_ranges_to_nat = var.source_subnetwork_ip_ranges_to_nat
