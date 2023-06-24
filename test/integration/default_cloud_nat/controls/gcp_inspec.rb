@@ -1,5 +1,5 @@
 name = input('name')
-project_id = input('project_id')
+project = input('project')
 
 control 'compute_router' do
   title 'Compute Router'
@@ -7,7 +7,7 @@ control 'compute_router' do
   # Compute Router
   # https://docs.chef.io/inspec/resources/google_compute_router
 
-  describe google_compute_router(project: project_id, region: 'us-east1', name: name) do
+  describe google_compute_router(project: project, region: 'us-east1', name: name) do
     it { should exist }
     its('network') { should match(%r{/kitchen-vpc$}) }
   end
@@ -19,7 +19,7 @@ control 'compute_router_nat' do
   # Compute Router NAT
   # https://docs.chef.io/inspec/resources/google_compute_router_nat
 
-  describe google_compute_router_nat(project: project_id, region: 'us-east1', router: name, name: name) do
+  describe google_compute_router_nat(project: project, region: 'us-east1', router: name, name: name) do
     it { should exist }
     its('nat_ip_allocate_option') { should cmp 'AUTO_ONLY' }
     its('source_subnetwork_ip_ranges_to_nat') { should cmp 'ALL_SUBNETWORKS_ALL_IP_RANGES' }

@@ -26,7 +26,7 @@ module "cloud_nat" {
   source   = "github.com/osinfra-io/terraform-google-cloud-nat//regional?ref=v0.0.0"
 
   network    = "example-vpc"
-  project_id = "example-project"
+  project    = "example-project"
   region     = "us-east1"
 }
 ```
