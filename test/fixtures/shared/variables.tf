@@ -3,5 +3,5 @@
 
 variable "project" {
   type    = string
-  default = "testing-kitchen-tfbd-sb"
+  default = "testing-kitchen-tfd2-sb"
 }
