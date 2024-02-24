@@ -9,5 +9,5 @@ module "test" {
   project                            = var.project
   region                             = "us-east4"
   source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
-  subnetwork_names                   = ["kitchen-subnet-us-east4"]
+  subnetwork_names                   = ["fleet-member-us-east4"]
 }
