@@ -6,7 +6,7 @@
 
 **[Infracost](https://www.infracost.io):**
 
-[![infracost](https://img.shields.io/endpoint?label=default_cloud_nat&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d/branch/ef3d37cf-2b03-430b-a51d-e06be6e98921/default_cloud_nat)](https://dashboard.infracost.io/org/osinfra-io/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d?tab=settings) [![infracost](https://img.shields.io/endpoint?label=list_of_subnets_cloud_nat&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d/branch/ef3d37cf-2b03-430b-a51d-e06be6e98921/list_of_subnets_cloud_nat)](https://dashboard.infracost.io/org/osinfra-io/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d?tab=settings)
+[![infracost](https://img.shields.io/endpoint?url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d/branch/ef3d37cf-2b03-430b-a51d-e06be6e98921)](https://dashboard.infracost.io/org/osinfra-io/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d?tab=settings)
 
 💵 Monthly estimates based on Infracost baseline costs.
 
