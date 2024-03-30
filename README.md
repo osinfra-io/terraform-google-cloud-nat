@@ -8,10 +8,7 @@
 
 [![infracost](https://img.shields.io/endpoint?label=default_cloud_nat&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d/branch/ef3d37cf-2b03-430b-a51d-e06be6e98921/default_cloud_nat)](https://dashboard.infracost.io/org/osinfra-io/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d?tab=settings) [![infracost](https://img.shields.io/endpoint?label=list_of_subnets_cloud_nat&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d/branch/ef3d37cf-2b03-430b-a51d-e06be6e98921/list_of_subnets_cloud_nat)](https://dashboard.infracost.io/org/osinfra-io/repos/b2687edb-3eb9-4f6b-99b3-545ec27bab4d?tab=settings)
 
-Monthly cost estimates for this module based on these usage values:
-
-- [default_cloud_nat](test/fixtures/default_cloud_nat/infracost-usage.yml)
-- [list_of_subnets_cloud_nat](test/fixtures/list_of_subnets_cloud_nat/infracost-usage.yml)
+💵 Monthly estimates based on Infracost baseline costs.
 
 ## Repository Description
 
@@ -24,18 +21,6 @@ Terraform **example** module for a Google Cloud Platform NAT.
 
 > [!TIP]
 > You can check the [test/fixtures](test/fixtures/) directory for example configurations. These fixtures set up the system for testing by providing all the necessary initial code, thus creating good examples to base your configurations.
-
-Here is an example of a basic configuration:
-
-```hcl
-module "cloud_nat" {
-  source   = "github.com/osinfra-io/terraform-google-cloud-nat//regional?ref=v0.0.0"
-
-  network    = "example-vpc"
-  project    = "example-project"
-  region     = "us-east1"
-}
-```
 
 ## <img align="left" width="35" height="35" src="https://github.com/osinfra-io/github-organization-management/assets/1610100/39d6ae3b-ccc2-42db-92f1-276a5bc54e65"> Development
 
