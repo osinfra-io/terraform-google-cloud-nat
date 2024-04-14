@@ -24,6 +24,7 @@ jobs:
 
   list_of_subnets:
     name: "List of Subnets"
+    needs: default
     uses: osinfra-io/github-terraform-called-workflows/.github/workflows/test.yml@v0.2.3
     if: github.actor != 'dependabot[bot]'
     with:
