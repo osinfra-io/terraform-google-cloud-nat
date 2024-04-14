@@ -2,7 +2,7 @@
 
 **[GitHub Actions](https://github.com/osinfra-io/terraform-google-cloud-nat/actions):**
 
-[![Dependabot](https://github.com/osinfra-io/terraform-google-cloud-nat/actions/workflows/dependabot.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-cloud-nat/actions/workflows/dependabot.yml)
+[![Terraform Tests](https://github.com/osinfra-io/terraform-google-cloud-nat/actions/workflows/test.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-cloud-nat/actions/workflows/test.yml) [![Dependabot](https://github.com/osinfra-io/terraform-google-cloud-nat/actions/workflows/dependabot.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-cloud-nat/actions/workflows/dependabot.yml)
 
 **[Infracost](https://www.infracost.io):**
 
@@ -51,6 +51,18 @@ You'll need to be a member of the [platform-contributors](https://groups.google.
 
 ```none
 cd fixtures/default
+```
+
+```none
+terraform init
+```
+
+```none
+terraform test
+```
+
+```none
+cd fixtures/list_of_subnets
 ```
 
 ```none
