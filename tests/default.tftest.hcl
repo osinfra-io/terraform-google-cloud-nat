@@ -6,10 +6,12 @@ run "default" {
   }
 }
 
-run "list_of_subnets" {
-  command = apply
+// This test needs the default test destroyed before running
 
-  module {
-    source = "./tests/fixtures/list_of_subnets"
-  }
-}
+// run "list_of_subnets" {
+//   command = apply
+
+//   module {
+//     source = "./tests/fixtures/list_of_subnets"
+//   }
+// }
