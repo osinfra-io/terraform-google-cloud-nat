@@ -11,7 +11,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | 5.17.0 |
+| <a name="provider_google"></a> [google](#provider\_google) | 5.32.0 |
 
 ## Modules
 
